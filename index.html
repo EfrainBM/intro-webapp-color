@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector de Color RGB</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-5">Selector de Color RGB</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <input type="color" id="colorPicker" class="form-control form-control-lg">
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="redInput">Rojo:</label>
+          <input type="number" class="form-control" id="redInput" min="0" max="255" value="0">
+        </div>
+        <input type="range" class="form-control-range" id="redRange" min="0" max="255" value="0">
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="greenInput">Verde:</label>
+          <input type="number" class="form-control" id="greenInput" min="0" max="255" value="0">
+        </div>
+        <input type="range" class="form-control-range" id="greenRange" min="0" max="255" value="0">
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="blueInput">Azul:</label>
+          <input type="number" class="form-control" id="blueInput" min="0" max="255" value="0">
+        </div>
+        <input type="range" class="form-control-range" id="blueRange" min="0" max="255" value="0">
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <div id="colorDisplay" class="rounded p-3 text-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
